@@ -1,5 +1,4 @@
 import urllib3
-import json
 import gzip
 import json
 import base64
@@ -16,7 +15,7 @@ def lambda_handler(event, context):
     log_events = json.loads(cw_logs)
 
     # 보낼 메시지만 뽑아서 payload에 전송
-    payload=log_events['logEvents'][0]['message']
+    payload = log_events['logEvents'][0]['message']
 
     msg = {
         "username": "AWS php error",
