@@ -8,6 +8,8 @@ http = urllib3.PoolManager()
 
 def lambda_handler(event, context):
     url = "your.discord.webhook.url"
+    usename = "custom.username"
+    avatar_url = "custom.avatar.url"
 
     # base64 decode하고 gzip 읽어오기
     cw_data = str(event['awslogs']['data'])
@@ -18,8 +20,9 @@ def lambda_handler(event, context):
     payload = log_events['logEvents'][0]['message']
 
     msg = {
-        "username": "AWS php error",
+        "username": usename,
         "content": payload,
+        "avatar_url": avatar_url
     }
     # Discord Webhook은 받는 post content-type 제한 있으니 header설정 반드시 해 줘야함
     header = {
