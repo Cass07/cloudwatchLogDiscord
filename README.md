@@ -14,7 +14,7 @@ cloudwatch log 그룹 구독 필터로 discord 통지 보내기
 }
 ```
 * KNS 암호화 설정 안했으면 기본적으로 base64 인코딩만 되어있다
-* 디코딩하면 gzip으로 압축된 json 데이터가 나오고 구조는 다음과 같음.
+* 디코딩하면 gzip으로 압축된 json 데이터가 나오고 구조는 다음과 같은듯함
 
 ```json
 {
@@ -34,3 +34,6 @@ cloudwatch log 그룹 구독 필터로 discord 통지 보내기
   ]
 }
 ```
+
+#### discord webhook api doc
+[link](https://discord.com/developers/docs/resources/webhook#execute-webhook)
