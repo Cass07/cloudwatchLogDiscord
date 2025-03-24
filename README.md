@@ -3,6 +3,7 @@ cloudwatch log 그룹 구독 필터로 discord 통지 보내기
 
 ### 대충 구조
 <img width="915" alt="스크린샷 2025-03-17 오전 3 04 49" src="https://github.com/user-attachments/assets/feaeddb5-f182-4c80-9ca7-73c57cf712bb" />
+
 * cloudwatch log 구독 필터로 lambda 트리거링해서 디스코드 메시지 보내기
 
 #### cloudwatch log 통지 json 구조
